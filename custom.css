@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    min-height:100vh ; 
+    background:linear-gradient(20deg,rgb(5, 234, 234),rgb(3, 88, 116),rgb(87, 107, 237),rgb(241, 215, 215));
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+   
+}
+.note{
+    width:400px;
+    height: 380px;
+    background:linear-gradient(60deg,rgb(195, 239, 239),rgb(236, 240, 245));
+    margin: 15px;
+    border-radius: 15px;
+    /* box-shadow: 8px 8px  rgb(9, 9, 9); */
+}
+.head{
+    color:black;
+    font-family: cursive;
+    text-decoration: underline 5px blue;;
+    text-shadow: 5px 5px white;
+    height: 100px;
+    text-align: center;
+     align-items: center; 
+    font-size: 30px;
+    background-color: aqua;
+    border-bottom: 5px ridge brown;
+}
+.footer{
+    background-color: antiquewhite;
+    height: 7vh;
+    font-family: cursive;
+}
+.tool{
+    width: 100%;
+    padding: 6px;
+    background-color: rgb(147, 96, 96);
+    margin: .25px;
+    height: 28px;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+#save{
+    width:25px;
+    height: 20px;
+}
+.note> textarea{
+    border:none;
+    width:100%;
+    height: 100%;
+    resize:none;
+    padding: 10px;
+    font-size: 17px;
+    font-family: 'Tapestry', cursive;
+}
+.content:focus{
+    border: 0px;
+    outline:0px;
+}
+#add{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: rgb(42, 40, 40);
+    color:white;
+    padding: 10px;
+    border:0;
+    outline: 0;
+    border-radius: 10px;
+     box-shadow:
+    7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    margin-top: 50px;
+
+}
+#add:hover{
+    cursor: pointer;
+}
+#add:active {
+     box-shadow:
+      7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(4px);
+    /* Moving button 4px to y-axis */
+}
+@keyframes gradient {
+	25% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+
